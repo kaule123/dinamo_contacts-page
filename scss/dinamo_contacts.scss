@@ -1,0 +1,350 @@
+@import "_header";
+@import "_dinamo_contacts_navigator";
+@import "_dinamo_contacts_statistics";
+@import "_footer";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,400;1,700&family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  font-family: Roboto;
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (max-width: 1300px) {
+  .wrapper {
+    max-width: 1140px;
+    padding: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .wrapper {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+   .wrapper {
+    max-width: none;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 540px;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 576px) {
+  .wrapper {
+    max-width: none;
+    width: 100%;
+    padding: 0 8px;
+    margin: 0 auto;
+  }
+}
+
+.slogan {
+  margin-bottom: 43px;
+  &__title {
+    margin-bottom: 12px;
+    font-family: Roboto Condensed;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    text-transform: uppercase;
+  }
+  &__adress {
+    font-size: 16px;
+    line-height: 130%;
+    color: #140605;
+  }
+}
+
+@media (max-width: 768px) {
+  .slogan {
+    margin-bottom: 27px;
+    &__title {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+    &__adress {
+      font-size: 14px;
+    }
+  }
+}
+
+.info {
+  margin-bottom: 24px;
+  display: flex;
+  //&__rereception {  }
+  &__allboxex {
+    width: 100%;
+    padding: 24px 0px 24px 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 5px rgba(20, 6, 5, 0.1);
+    border-radius: 2px;
+  }
+  &__organization-box {
+    margin-left: 30px;
+  }
+
+  //&__allblocks {
+    /* width: 291px; */
+  //}
+
+  &__allitems {
+    margin-bottom: 13px;
+  }
+  &__allitems:last-child {
+    margin-bottom: 0px;
+  }
+  
+  &__alltitles {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #594E4B;
+  }
+  &__allnames {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #140605;
+  }
+  &__allcontacts {
+    div.nowrap {
+      white-space: nowrap;
+    }
+    font-size: 16px;
+    line-height: 160%;
+  }
+  a.red {
+    font-weight: bold;
+    color: #A23228;
+  }
+  a.red:hover {
+    text-decoration: underline;
+  }
+}
+@media(max-width: 768px) {
+  .info {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    &__allboxex {
+      width: 100%;
+      padding: 8px 0px 16px 8px;
+    }
+    &__reception-box {
+      margin-bottom: 16px;
+    }
+    &__organization-box {
+      margin-left: 0;
+    }
+  
+    //&__allblocks { width: 291px;}
+  
+    //&__allitems {  }
+    //&__allitems:last-child {  }
+    
+    &__alltitles {
+      font-size: 18px;
+      line-height: 21px;
+    }
+    &__allnames {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    &__allcontacts {
+      div.nowrap {
+        white-space: nowrap;
+      }
+      font-size: 14px;
+    }
+  }
+}
+
+.requisites {
+  margin-bottom: 64px;
+  display: flex;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 5px rgba(20, 6, 5, 0.1);
+  border-radius: 2px;
+  white-space: nowrap;
+  &__body {
+    padding: 24px 0px 36px 24px;
+  }
+  &__title {
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #594E4B;
+  }
+  &__allboxex {
+    &-allsubtitles {
+      margin-bottom: 21px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px;
+      color: #140605
+    }
+    &-allcontent {
+      display: flex;
+      align-items: center;
+    }
+    &-databox {
+      display: flex;
+      &-div {
+        color: #A09999;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 160%;
+      }
+    }
+    &-data {
+      white-space: nowrap;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 160%;
+      color: #C89555;    
+    }
+    &-button {
+      background: none;
+      display: flex;
+      &-icon {
+        display: block;
+        margin-left: 17px;
+        width: 13px;
+        height: 15px;
+      }
+      &-text {
+        margin-left: 4px;
+        font-size: 16px;
+        line-height: 19px;
+        color: #2e211e;
+      }
+    }
+  }
+  .requisites__allboxex-button:hover {
+    .requisites__allboxex-button-text {
+      border-bottom: 1px solid #140605;
+      color: #140605;  
+    }
+    .requisites__allboxex-button-icon {
+      background: url(../img/icons/copy-black.svg);
+    }    
+  }
+  &__box1 {
+    &-content1 {
+      margin-bottom: 15px;
+    }
+    &-content2 {
+      margin-bottom: 23px;
+    }
+  }
+  &__box2 {  
+    &-button {
+      &-text {
+        font-weight: 700;
+      }
+    }
+  }
+  &__image {
+      z-index: 1;
+      position: relative;
+      width: 100%;
+      height: 100%;
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    &-grad {
+      //height через js в пикселях;
+      position: relative;
+      z-index: 99;
+      top:0;
+      width: 100%;
+      background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .requisites__image {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .requisites {
+    margin-bottom: 56px;
+    padding-top: 0px;
+    display: flex;
+    white-space: inherit;
+    &__body {
+      padding: 8px 8px 16px 8px;
+    }
+    &__title {
+      margin-bottom: 13px;
+      font-size: 18px;
+      line-height: 21px;
+    }
+    &__allboxex {
+      &-allsubtitles {
+        margin-bottom: 14px;
+        font-size: 14px;
+        line-height: 16px;
+      }
+      &-allcontent {
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+      }
+      &-databox {
+        flex-wrap: wrap;
+        margin-bottom: 6px;
+        display: flex;
+          &-div { 
+            font-size: 12px;
+           }
+      }
+      &-data {
+        margin-bottom: 6px; 
+        font-size: 14px; 
+      
+      }
+      &-button {
+        &-icon {
+          margin-left: 0px;
+          width: 11px;
+          height: 13px;
+        }
+        &-text {
+          font-size: 14px;
+        }
+      }  
+    }
+    &__box1 {
+      &-content1 {
+        margin-bottom: 13px;
+      }
+      &-content2 {
+        margin-bottom: 22px;
+      }
+    }
+    &__box2 {  
+      &-button {
+        &-text {
+          font-weight: 700;
+        }
+      }
+    }
+    //&__image {}
+  }
+}
